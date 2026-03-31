@@ -30,7 +30,7 @@ class ToySequenceClassifier(nn.Module):
         if input_ids.dtype != torch.long:
             raise TypeError(f"input_ids must be torch.long, got {input_ids.dtype}")
 
-        x = self.embedding(input_ids)   # (B, T, H)
+        x = self.embedding(input_ids)   # (B, T, H) B: batch, T: sequence, H: hidden_size
         x = x.mean(dim=1)               # (B, H)
         x = self.dropout(x)
         logits = self.classifier(x)
