@@ -1,0 +1,9 @@
+name: dummy_sequence
+num_samples: 1024
+seq_len: 16
+vocab_size: 128
+threshhold: 900
+train_ratio: 0.8
+bathch_size: 32
+num_worker: 0
+pin_memory: false

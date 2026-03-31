@@ -1,0 +1,4 @@
+name: wandb
+project: llm_training_lab
+save_dir: outputs
+offline: true

@@ -1,0 +1,9 @@
+accelerator: cpu
+devices: 1
+max_epochs: 3
+log_every_n_steps: 10
+limit_train_batches: 1.0
+limit_val_batches: 1.0
+enable_chechpointing: false
+deterministic: true
+precision: 32

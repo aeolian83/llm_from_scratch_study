@@ -1,0 +1,21 @@
+defaults:
+  - model: toy_mlp
+  - data: dummy_sequence
+  - trainer: cpu_debug
+  - logger: tensorboard
+  - experiment: hello
+  - _self_
+
+seed: 42
+
+run: 
+  project_name: llm_training_lab
+  ouput_dir: ouputs
+
+optimizer: 
+  lr: 1e-3
+  weight_decay: 0.0
+
+  
+
+  
