@@ -5,7 +5,7 @@ from lightning import Trainer
 from omegaconf import DictConfig, OmegaConf
 
 from llm_lab.data.dummy_datamodule import DummyDataConfig, DummySequenceDataModule
-from llm_lab.lightining.task import ClassificationTask
+from llm_lab.lightning.task import ClassificationTask
 from llm_lab.models.toy_mlp import ToyMLPConfig, ToySequenceClassifier
 from llm_lab.utils.logging_utils import build_logger
 from llm_lab.utils.seed import seed_everything_local

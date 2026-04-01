@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from lighning import LightningDataModule
+from lightning import LightningDataModule
 from torch.utils.data import DataLoader, random_split
 
 from llm_lab.data.dummy_dataset import DummySequenceDataset

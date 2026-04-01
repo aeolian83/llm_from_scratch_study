@@ -5,8 +5,8 @@ from lightning.pytorch.loggers import TensorBoardLogger
 from lightning.pytorch.loggers.logger import Logger
 
 try:
-    from lightining.pytorch.loggers import WandbLogger
-except Eception:
+    from lightning.pytorch.loggers import WandbLogger
+except Exception:
     WandbLogger = None
 
 def build_logger(cfg: Any) -> Logger:
